@@ -21,22 +21,11 @@
   "homepage": "https://github.com/mpearson-11/rules-engine#readme",
   "scripts": {
     "test": "jest --coverage",
-    "build": "rimraf ./dist && tsc --skipLibCheck"
+    "build": "rimraf ./dist && tsc --skipLibCheck",
+    "check": "node ./scripts/can-publish.js"
   },
   "eslintConfig": {
     "extends": "react-app"
-  },
-  "browserslist": {
-    "production": [
-      ">0.2%",
-      "not dead",
-      "not op_mini all"
-    ],
-    "development": [
-      "last 1 chrome version",
-      "last 1 firefox version",
-      "last 1 safari version"
-    ]
   },
   "publishConfig": {
     "registry": "https://registry.npmjs.org"
